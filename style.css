@@ -401,6 +401,148 @@ body{
     transform: scale(1.1);
     cursor: pointer;
 }
+.banier{
+    background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),
+     url(images/banner-caterers.jpg) center / cover no-repeat;
+    height: 300px;
+    
+}
+body{
+    background-color: #fffbea;
+}
+.liens .traiteur{
+    background-color: #e65100;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+}
+.description{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+.description h1{
+    width: 75%;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.description p{
+    width: 75%;
+    line-height: 1.4rem;
+}
+.section-experience{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 8px 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+    gap: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.filtrage{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.filtrage label{
+    display: block;
+    margin-bottom: 5px;
+}
+.filtrage select{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+.bouton .btn-left, .btn-right{
+    height: 40px;
+    border-radius: 5px;
+}
+.bouton .btn-left{
+    background-color: #e65100 ;
+    border: none;
+    color: #f1f1f1;
+    width: 90px;
+}
+.bouton .btn-right{
+    background-color: #fff;
+    border: solid 1px #999;
+    color: #555;
+    margin-left: 5px;
+    width: 120px;
+}
+.carte-traiteur{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 5%;
+}
+.carte img{
+    width: 370px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+.carte{
+    display: flex;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.15);
+}
+.carte-text{
+    padding: 0 10px;
+    width: 70%;
+    line-height: 1.3rem;
+    font-size: 13px;
+    color: #111828;
+}
+.carte-text .pill span{
+    background-color: #f3f4f6;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 2px 8px;
+}
+.carte-text .bold{
+    font-weight: bold;
+}
+.carte-text .entete, .profil{
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 0;
+}
+.profil button{
+    background-color: #111828;
+    padding: 8px 10px;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+}
+.entete .jaune{
+    color: #ffb300;
+}
+.carte img::before{
+    content: "vérifié";
+}
+.entete .point{
+    font-size: 6rem;
+}
+.banner2{
+    margin-bottom: 3%;
+}
 footer{
     height: 300px;
     background-color: #111828;
@@ -436,3 +578,5 @@ footer p{
     margin-top: 2%;
     font-size: 14px;
 }
+
+
