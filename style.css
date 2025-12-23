@@ -649,6 +649,9 @@ body{
 .form-traiteur label {
   font-size: 14px;
 }
+.label-desc{
+    margin-top: 8px;
+}
 .form-traiteur input, select, textarea {
   padding: 10px;
   border: 1px solid #d1d5db;
