@@ -654,12 +654,6 @@ body{
   border: 1px solid #d1d5db;
   border-radius: 6px;
 }
-<<<<<<< HEAD
-.label-desc{
-    margin-top: 8px;
-}
-=======
->>>>>>> 07d0795d967d861aa4c31936fb36d54e9e7544d9
 .checkbox-group label {
   display: flex;
   gap: 8px;
