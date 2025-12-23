@@ -396,11 +396,11 @@ body{
     height: 45px;
     padding: 8px;
     border-radius: 5px;
-    border: none;
     background-color: #f1f1f1;
     font-weight: bold;
     color: #e65100;
     transition: 0.3s ease-out;
+    line-height: 30px;
 }
 
 .message a:hover{
