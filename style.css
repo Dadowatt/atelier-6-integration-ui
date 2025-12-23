@@ -74,7 +74,7 @@ body{
     font-weight: bold;
 }
 .inscription .right:hover{
-    background-color: #ffb300;
+    background-color: #ff4500;
     cursor: pointer;
 }
 .image img{
@@ -392,10 +392,12 @@ body{
     padding: 8px;
     border-radius: 5px;
     border: none;
-    color: #e65100;
     background-color: #f1f1f1;
     font-weight: bold;
     transition: 0.3s ease-out;
+}
+.message button a{
+    color: #e65100;
 }
 .message button:hover{
     background-color: #ffb300;
@@ -406,11 +408,10 @@ body{
     background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),
      url(images/banner-caterers.jpg) center / cover no-repeat;
     height: 300px;
-    
+    background-blend-mode: normal, multiply;
 }
-body{
-    background-color: #fffbea;
-}
+
+/* stylisation de la page traiteur */
 .liens .traiteur{
     background-color: #e65100;
     color: #fff;
@@ -426,6 +427,9 @@ body{
     width: 60%;
     height: 100%;
     margin: auto;
+}
+.bg-color{
+    background-color: #fffbea;
 }
 .description h1{
     width: 75%;
@@ -497,12 +501,31 @@ body{
     object-fit: cover;
     border-radius: 8px 0 0 8px;
 }
+
+.carte-image {
+    position: relative;
+}
+.badge-verifie {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e8f7ec;
+    color: #1b7a3d;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 2;
+}
 .carte{
     display: flex;
     height: 150px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.15);
+    position: relative;
 }
 .carte-text{
     padding: 0 10px;
@@ -541,9 +564,122 @@ body{
 .entete .point{
     font-size: 6rem;
 }
-.banner2{
+.banner-traiteur{
     margin-bottom: 3%;
 }
+
+/* stylisation de la page inscription traiteur */
+.description-traiteur{
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    margin: auto;
+}
+.description-traiteur h1{
+    font-size: 3.2rem;
+}
+.description-traiteur p{
+    margin-top: 15px;
+}
+.container {
+  max-width: 950px;
+  margin: auto;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+.form-traiteur {
+  display: grid;
+  width: 600px;
+  gap: 25px;
+  margin: auto;
+}
+.block {
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+.form-traiteur h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.form-group {
+  display: grid;
+  gap: 6px;
+}
+.form-traiteur .fond-bleu{
+  background-color: #e9f1fe;
+}
+.form-traiteur .fond-bleu::placeholder{
+  color: #000;
+  font-size: 14px;
+}
+.form-traiteur label {
+  font-size: 14px;
+}
+.form-traiteur input, select, textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+.checkbox-group label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.block .upload input[type="file"]{
+    border: none;
+}
+#id_input{
+    display: none;
+}
+.file-label{
+    display: inline-block;
+    background-color: #fffbea;
+    padding: 8px 15px;
+    color: #e65100;
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.block .upload p {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.form-traiteur .btn {
+  justify-self: end;
+  padding: 10px 20px;
+  background: #f97316;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* section footer */
 footer{
     height: 300px;
     background-color: #111828;
