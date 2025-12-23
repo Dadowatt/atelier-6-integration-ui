@@ -637,11 +637,7 @@ body{
 }
 .form-group {
   display: grid;
-<<<<<<< HEAD
   gap: 8px;
-=======
-  gap: 6px;
->>>>>>> 07d0795d967d861aa4c31936fb36d54e9e7544d9
 }
 .form-traiteur .fond-bleu{
   background-color: #e9f1fe;
