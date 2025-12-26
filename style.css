@@ -18,9 +18,7 @@ header{
     right: 0;
     z-index: 3;
     background-color: #fff;
-}
-body{
-    padding-top: 80px;
+    margin-bottom: 80px;
 }
 .logo img{
     height: 60px;
@@ -808,6 +806,145 @@ body{
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+/* stylisation de la page dashboard */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    column-gap: 70px;
+    background-color: #f9fafc;
+}
+.item-sidebar{
+    background-color: #924010;
+    padding: 8px;
+}
+.menu-resto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #fff;
+    height: 100vh;
+}
+.menu-resto span{
+    margin-right: 8px;
+}
+.menu-haut, .menu-bas{
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 20px;
+}
+.menu-haut .active{
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.menu-bas li{
+    border-top: solid 1px #daa520;
+    padding-top: 10px;
+}
+.item-tableau{
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.titre-dashboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.bouton-ajou .btn-ajou{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #d97807;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.gauche p{
+    color: #555;
+}
+.zone-filtre{
+    width: 100%;
+    background-color: #fff;
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.zone label{
+    display: block;
+    margin-bottom: 8px;
+}
+.zone select{
+    width: 90%;
+}
+.btn-zone{
+    color: #fff;
+    background-color: #d97807;
+    padding: 10px 20px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tableau table{
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+    margin-top: 1%;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+.tableau .tof{
+    display: flex;
+    align-items: center;
+}
+.tof img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+.tableau table th{
+    text-align: start;
+    width: 120px;
+    background-color: #f9fafc;
+    color: #555;
+}
+.tableau table th,td{
+    height: 80px;
+    border: none;
+}
+.tableau tr{
+    border-bottom: solid 1px #999;
+}
+.badge-jaune{
+    background-color: #fffac3;
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+.badge-vert{
+    background-color: #dcfce7;
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+.actions a{
+    margin: 0 5px;
+}
+.rouge{
+    color: red;
+}
+.bleu{
+    color: blue;
+}
+
 /* section footer */
 footer{
     height: 300px;

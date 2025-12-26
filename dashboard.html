@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | traiteur</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7653c6b1c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- section tableau -->
+     <div class="conteneur">
+        <div class="grid-container">
+            <aside class="item-sidebar">
+                <div class="sidebar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="menu-resto">
+                    <ul class="menu-haut">
+                        <li><span><i class="fa-solid fa-house"></i></span> Tableau de bord</li>
+                        <li><span><i class="fa-solid fa-book-open"></i></span> Cours de cuisine</li>
+                        <li><span><i class="fa-solid fa-tag"></i></span> Catégories</li>
+                        <li class="active"><span><i class="fa-solid fa-building"></i></span> Restaurants</li>
+                        <li><span><i class="fa-solid fa-building"></i></span> Traiteurs</li>
+                        <li><span><i class="fa-solid fa-star"></i></span> Avis</li>
+                    </ul>
+                    
+                    <ul class="menu-bas">
+                        <li><span><i class="fa-solid fa-arrow-right-from-bracket"></i></span> Retour à l'accueil</li>
+                        <li><span><i class="fa-solid fa-arrow-right-from-bracket"></i></span> Deconnexion</li>
+                    </ul>
+                </div>
+
+            </div>
+            </aside>
+            <div class="item-tableau">
+                <div class="restaurant">
+                    <div class="titre-dashboard">
+                        <div class="gauche">
+                            <h3>Restaurants</h3>
+                            <p>Gérez les restaurants de la plateforme.</p>
+                        </div>
+                        <div class="bouton-ajou">
+                            <a href="#" class="btn-ajou">Ajouter un restaurant</a>
+                        </div>
+                    </div>
+                    <div class="zone-filtre">
+                        <div class="zone">
+                            <label>zone</label>
+                            <select>
+                                <option>Tous les zones</option>
+                            </select>
+                            <button class="btn-zone">filtrer</button>
+                        </div>
+                    </div>
+                </div>
+                <section class="tableau">
+                    <table border="collapse">
+                        <tr>
+                            <th>nom</th>
+                            <th>email</th>
+                            <th>zone</th>
+                            <th>statut</th>
+                            <th>actions</th>
+                        </tr>
+
+                        <tr>
+                            <td class="tof">
+                                <img src="images/jolof.jpg" alt="le Djoloff">
+                                <span>Le Djoloff</span>
+                            </td>
+                            <td>contact@ledjoloff.sn</td>
+                            <td>Plateau</td>
+                            <td><span class="badge-jaune">En attente</span></td>
+                            <td class="actions">
+                                <a href="" class="rouge">Modifier</a>
+                                <a href="" class="bleu">Supprimer</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tof">
+                                <img src="images/loutcha.jpg" alt="le Djoloff">
+                                <span>Chez Loutcha</span>
+                            </td>
+                            <td>contact@chezloutcha.sn</td>
+                            <td>Plateau</td>
+                            <td><span class="badge-jaune">En attente</span></td>
+                            <td class="actions">
+                                <a href="" class="rouge">Modifier</a>
+                                <a href="" class="bleu">Supprimer</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tof">
+                                <img src="images/jolof.jpg" alt="le Djoloff">
+                                <span>Le Thiossane</span>
+                            </td>
+                            <td>contact@lethiossane.sn</td>
+                            <td>Médina</td>
+                            <td><span class="badge-vert">Vérifié</span></td>
+                            <td class="actions">
+                                <a href="" class="rouge">Modifier</a>
+                                <a href="" class="bleu">Supprimer</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tof">
+                                <img src="images/jolof.jpg" alt="le Djoloff">
+                                <span>Sushi Dakar</span>
+                            </td>
+                            <td>contact@sushidakar.sn</td>
+                            <td>Almadies</td>
+                            <td><span class="badge-vert">Vérifié</span></td>
+                            <td class="actions">
+                                <a href="" class="rouge">Modifier</a>
+                                <a href="" class="bleu">Supprimer</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tof">
+                                <img src="images/jolof.jpg" alt="le Djoloff">
+                                <span>Amanda Larson</span>
+                            </td>
+                            <td>vedevi@mailinator.com</td>
+                            <td>Aut dignissimos iure</td>
+                            <td><span class="badge-jaune">En attente</span></td>
+                            <td class="actions">
+                                <a href="" class="rouge">Modifier</a>
+                                <a href="" class="bleu">Supprimer</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tof">
+                                <img src="images/jolof.jpg" alt="le Djoloff">
+                                <span>Mara Knight</span>
+                            </td>
+                            <td>totynukiza@mailinator.com</td>
+                            <td>Possimus quis moles</td>
+                            <td><span class="badge-jaune">En attente</span></td>
+                            <td class="actions">
+                                <a href="" class="rouge">Modifier</a>
+                                <a href="" class="bleu">Supprimer</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tof">
+                                <img src="images/jolof.jpg" alt="le Djoloff">
+                                <span>Joan Salinas</span>
+                            </td>
+                            <td>tiqotinef@mailinator.com</td>
+                            <td>Amet voluptatem ips</td>
+                            <td><span class="badge-jaune">En attente</span></td>
+                            <td class="actions">
+                                <a href="" class="rouge">Modifier</a>
+                                <a href="" class="bleu">Supprimer</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="tof">
+                                <img src="images/jolof.jpg" alt="le Djoloff">
+                                <span>Serena Thornton</span>
+                            </td>
+                            <td>mihonalah@mailinator.com</td>
+                            <td>Reprehenderit volupt</td>
+                            <td><span class="badge-jaune">En attente</span></td>
+                            <td class="actions">
+                                <a href="" class="rouge">Modifier</a>
+                                <a href="" class="bleu">Supprimer</a>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
