@@ -7,6 +7,9 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+    padding-top: 70px;
+}
 header{
     display: flex;
     justify-content: space-around;
@@ -18,7 +21,6 @@ header{
     right: 0;
     z-index: 3;
     background-color: #fff;
-    margin-bottom: 80px;
 }
 .logo img{
     height: 60px;
@@ -171,9 +173,10 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #fff;
 }
 .row-title{
-    margin: 2% 0;
+    padding: 2% 0;
     text-align: center;
 }
 .row-title p{
@@ -224,6 +227,9 @@ header{
     height: 600px;
     background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
     url(images/bu.jpg) center/cover no-repeat;
+}
+.section-client{
+    background-color: #fff;
 }
 .section-contact h2{
     text-align: center;
@@ -806,7 +812,9 @@ header{
     font-weight: bold;
     font-size: 1.2rem;
 }
-
+body{
+    background-color: #f3f4f6;
+}
 /* stylisation de la page dashboard */
 
 .grid-container{
@@ -944,7 +952,58 @@ header{
 .bleu{
     color: blue;
 }
-
+/* formulaire de connexion */
+.form-connexion{
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+}
+.checked{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+.form-connexion input[type="email"], input[type="password"]{
+    height: 45px;
+    padding: 8px;
+    outline: none;
+    border: solid 1px #dcdfe3;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+.form-connexion{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.form-connexion h2{
+    text-align: center;
+}
+.orange{
+    color: #d97807;
+}
+.form-connexion button{
+    height: 40px;
+    background-color: #d97807;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form-connexion button:hover{
+    background-color: #f97316;
+}
+.group{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 /* section footer */
 footer{
     height: 300px;
