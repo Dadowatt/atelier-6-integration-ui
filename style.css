@@ -97,7 +97,7 @@ header{
     border-radius: 15px;
     font-weight: bold;
     color: #e65100;
-    top: 15px;
+    top: 5px;
     right: 20px;
 }
 .image p span{
@@ -826,6 +826,13 @@ body{
 .item-sidebar{
     background-color: #924010;
     padding: 8px;
+    height: 90vh;
+}
+.item-tableau{
+    padding: 10px 20px;
+    overflow: hidden;
+    height: 90vh;
+    overflow-y: scroll;
 }
 .menu-resto{
     display: flex;
@@ -833,7 +840,7 @@ body{
     justify-content: space-between;
     margin-top: 30px;
     color: #fff;
-    height: 100vh;
+    height: 70vh;
 }
 .menu-resto span{
     margin-right: 8px;
@@ -852,10 +859,7 @@ body{
     border-top: solid 1px #daa520;
     padding-top: 10px;
 }
-.item-tableau{
-    padding: 10px 20px;
-    overflow: hidden;
-}
+
 .titre-dashboard{
     display: flex;
     justify-content: space-between;
@@ -1040,3 +1044,4 @@ footer p{
     margin-top: 2%;
     font-size: 14px;
 }
+
