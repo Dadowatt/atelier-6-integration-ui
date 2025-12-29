@@ -7,27 +7,28 @@
     list-style: none;
     text-decoration: none;
 }
-body{
-    padding-top: 70px;
-}
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
-    position: fixed;
+    padding: 10px;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 3;
     background-color: #fff;
 }
+header .menu-deroulant{
+    display: none;
+}
 .logo img{
     height: 60px;
 }
 .liens{
     display: flex;
-    justify-content: space-around;
+    gap: 20px;
+
 }
 .liens a{
     font-size: 1rem;
@@ -41,21 +42,17 @@ header{
     border-radius: 5px;
     padding: 8px;
 }
-.navbar{
-    width: 40%;
-}
 .active a{
     color: #e65100;
     border-bottom: solid 2px #e65100;
-    padding: 7px 10px;
+    padding-bottom: 5px;
     
 }
 .inscription{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 15%;
     color: #999;
+    gap: 8px;
 }
 .inscription .left{
     all: unset;
@@ -106,8 +103,6 @@ header{
 }
 .desc{
     display: flex;
-    width: 100%;
-    height: 500px;
     align-items: center;
     justify-content: center;
 }
@@ -131,6 +126,10 @@ header{
     background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),
         #e65100 url(images/banner-head-accueil.jpg) center / cover no-repeat;
     background-blend-mode: normal, multiply;
+    display: flex;
+    padding: 50px 20px;
+    justify-content: center;
+    align-items: center;
 }
 .row{
     background-color: #fff3e0;
@@ -220,14 +219,7 @@ header{
     border-bottom: solid 1px #ffb300;
     width: fit-content;
 }
-.section-contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 600px;
-    background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
-    url(images/bu.jpg) center/cover no-repeat;
-}
+
 .section-client{
     background-color: #fff;
 }
@@ -305,6 +297,7 @@ header{
     width: 80%;
     margin: auto;
     padding: 10px 0;
+    gap: 10px;
     height: 200px;
 }
 .noms{
@@ -641,13 +634,13 @@ header{
 }
 .grid-1 {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 }
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 15px;
 }
 .grid-3 {
   display: grid;
@@ -965,7 +958,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: auto;
+    margin: 3% auto;
 }
 .checked{
     display: flex;
@@ -1029,7 +1022,6 @@ footer{
 .col li{
     color: #999;
     line-height: 1.4rem;
-    font-size: 13px;
 }
 footer .icons{
     margin-top: 8px;
@@ -1042,6 +1034,282 @@ footer p{
     color: #999;
     text-align: center;
     margin-top: 2%;
-    font-size: 14px;
 }
+
+@media (min-width: 320px) and (max-width: 1023px) {
+    header .menu-deroulant{
+        display: block;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .liens{
+        display: none;
+    }
+    .inscription{
+        display: none;
+    }
+    .desc{
+        flex-direction: column;
+        align-items: center;
+    }
+    .desc .texte{
+        width: 100%;
+    }
+    .texte h1{
+        font-size: 14px;
+        width: 100%;
+    }
+    .texte p{
+        font-size: 16px;
+    }
+    .banner{
+        width: 100%;
+        padding: 5px;
+    }
+     
+    .image img{
+        height: 150px;
+        width: 200px;
+    }
+    .image p{
+        font-size: 12px;
+        width: fit-content;
+        padding: 2px;
+    }
+    .bloc1{
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .bloc2{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .row-title{
+       padding: 5px;
+    }
+    .section-service{
+        height: auto;
+        width: 100%;
+    }
+    .section-carte{
+        height: auto;
+    }
+    iframe{
+        width: 100%;   
+    }
+    .bloc3{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        height: auto;
+    }
+    .col h4{
+            margin-bottom: 5px;
+    }
+    .menu, .filtrage{
+        width: 100%;
+        padding: 5px;
+    }
+    .filtrage{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu{
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .carte{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .carte-text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .carte-image img{
+        width: 100%;
+        height: auto;
+    }
+    .entete{
+        width: 100%;
+    }
+    .profil{
+        flex-direction: column;
+    }
+     footer{
+        height: auto;
+    }
+    .section-footer .col{
+        width: 40%;
+        display: flex;
+        margin: 10px 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+    /* responsivite page inscription */
+    .grid-1, .grid-2, .grid-3{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .form-traiteur{
+        width: 400px;
+    }
+    .form-traiteur .btn{
+        justify-self: center;
+    }
+    .description{
+        width: 100%;
+    }
+    .description h1{
+        width: 100%;
+        text-align: center;
+    }
+    .form-connexion{
+        width: 90%;
+    }
+
+    /* responsivité page detail-traiteur */
+     .parent-grid{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "banner"
+            "grid-items-left"
+            "grid-items-right";
+        padding: 10px 15px;
+    }
+
+    .grid-banner{
+        height: 300px;
+        padding: 15px;
+    }
+
+    .liste{
+        column-gap: 30px;
+    }
+
+    .grid-items-right .bloc-card .btn-contact{
+        font-size: 1.1rem;
+    }
+
+    .grid-banner{
+        height: 220px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .grid-banner p{
+        font-size: 0.9rem;
+    }
+
+    .liste{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .grid-items-right .cordonnee{
+        row-gap: 10px;
+    }
+
+    .grid-items-right .bloc-card .langues{
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .grid-items-right .bloc-card .btn-contact{
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    /* responsivité de la page dashboard */
+     .grid-container{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+    .item-sidebar{
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu-resto{
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .menu-haut,
+    .menu-bas{
+        gap: 12px;
+    }
+
+    .item-tableau{
+        height: auto;
+        overflow: visible;
+        padding: 10px;
+    }
+
+    .titre-dashboard{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .bouton-ajou .btn-ajou{
+        width: 100%;
+        text-align: center;
+    }
+
+    .zone-filtre{
+        height: auto;
+    }
+
+    .zone select{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-zone{
+        width: 100%;
+        margin-left: 0;
+    }
+    .overflow{
+        overflow-x: auto;
+    }
+
+    .tableau table{
+        min-width: 700px;
+    }
+
+    .tableau table th,
+    .tableau table td{
+        font-size: 0.9rem;
+    }
+
+    .actions a{
+        display: inline-block;
+        margin: 4px 0;
+    }
+}
+
+
 
