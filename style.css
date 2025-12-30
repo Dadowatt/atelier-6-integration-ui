@@ -1036,6 +1036,92 @@ footer p{
     margin-top: 2%;
 }
 
+/* stylisation de la page contact */
+
+.container-contact{
+    background-color: #fef8e8;
+    height: auto;
+    padding: 10px 5px;
+    
+}
+.titre-contact{
+    text-align: center;
+    font-size: 2rem;
+}
+.form-contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 5px;
+    gap: 15px;
+    padding: 20px 15px;
+    width: 100%;
+    margin: 2% auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.form-contact label{
+    font-size: 1.5rem;
+}
+.form-contact .form-input, .form-contact button{
+    padding: 12px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #d1d5db;
+}
+.form-contact textarea{
+    border-radius:  8px;
+}
+.form-contact button{
+    font-size: 1.5rem;
+    background-color: #d97807;
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+}
+.form-contact button span{
+    margin-right: 5px;
+}
+.form-contact button:hover{
+    background-color: #daa520;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 3% auto;
+    padding: 10px 5px;
+}
+.carte-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+    width: 100%;
+    background-color: #fef8e8;
+}
+.carte-info h3{
+    color: #8b0000;
+}
+.carte-info p{
+    color: #555;
+}
+.carte-info i{
+    height: 6rem;
+    width: 6rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d97807;
+    color: #fff;
+}
+
+
 @media (min-width: 320px) and (max-width: 1023px) {
     header .menu-deroulant{
         display: block;
@@ -1053,6 +1139,7 @@ footer p{
     .desc{
         flex-direction: column;
         align-items: center;
+        width: 98%;
     }
     .desc .texte{
         width: 100%;
@@ -1066,26 +1153,20 @@ footer p{
     }
     .banner{
         width: 100%;
-        padding: 5px;
-    }
-     
-    .image img{
-        height: 150px;
-        width: 200px;
     }
     .image p{
-        font-size: 12px;
-        width: fit-content;
         padding: 2px;
     }
     .bloc1{
         flex-direction: column;
+        width: 100%;
         height: auto;
         padding: 10px 0;
     }
     .bloc2{
         flex-direction: column;
         height: auto;
+        width: 100%;
         align-items: center;
         padding: 10px 0;
     }
@@ -1112,7 +1193,7 @@ footer p{
     .col h4{
             margin-bottom: 5px;
     }
-    .menu, .filtrage{
+    .section-.section-experience .menu, .filtrage{
         width: 100%;
         padding: 5px;
     }
@@ -1132,6 +1213,7 @@ footer p{
         flex-direction: column;
         height: auto;
         padding-bottom: 10px;
+        width: 100%;
     }
     .carte-text{
         display: flex;
@@ -1198,10 +1280,10 @@ footer p{
         padding: 10px 15px;
     }
 
-    .grid-banner{
+    /* .grid-banner{
         height: 300px;
         padding: 15px;
-    }
+    } */
 
     .liste{
         column-gap: 30px;
@@ -1256,7 +1338,6 @@ footer p{
         height: auto;
         margin-top: 15px;
     }
-
     .menu-haut,
     .menu-bas{
         gap: 12px;
@@ -1279,13 +1360,12 @@ footer p{
         text-align: center;
     }
 
-    .zone-filtre{
-        height: auto;
-    }
-
     .zone select{
         width: 100%;
         margin-bottom: 10px;
+    }
+    .zone .label{
+        width: 100%;
     }
 
     .btn-zone{
@@ -1296,20 +1376,19 @@ footer p{
         overflow-x: auto;
     }
 
-    .tableau table{
-        min-width: 700px;
-    }
-
     .tableau table th,
     .tableau table td{
         font-size: 0.9rem;
+        flex-wrap: wrap;
     }
 
     .actions a{
         display: inline-block;
         margin: 4px 0;
     }
+
 }
+  
 
 
 
